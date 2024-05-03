@@ -18,14 +18,22 @@
 .menu ul li
     {
         display: inline-block;
-        color: rgb(88, 88, 88);
-        font-weight: bold;
+        color: #6E6E6E;
         font-size: larger;
         padding-top: 140px;
     }
-.menu ul li:hover
+.menu a:hover
     {
-        color: rgb(0, 178, 277);;
+        color: #00B2E3;
+        font-weight: bold;
+    }
+.menu li :nth-child(1):hover
+    {
+        letter-spacing: -0.7px;
+    }
+.menu li :nth-child(4):hover
+    {
+        letter-spacing: -5px;
     }
 .seccion_inicio
     {
@@ -39,13 +47,13 @@
     }
 .logo p
     {
-        color: rgb(0, 178, 277);
+        color: #00B2E3;
         align-self: flex-end;
         font-size: larger;
     }
 .logo p strong
     {
-        color: rgb(88, 88, 88);
+        color: #6E6E6E;
     }
 .inicio
     {
@@ -54,19 +62,19 @@
     }
 .inicio h1
     {
-        color: rgb(88, 88, 88);
+        color: #6E6E6E;
         font-size: 80px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 .inicio h2
     {
-        color: rgb(88, 88, 88);
+        color: #6E6E6E;
         font-size: xx-large;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 .inicio h2 span
     {
-        color: rgb(0, 178, 277);
+        color: #00B2E3;
     }
 .botones
     {
@@ -80,14 +88,14 @@
     }
 .dudas
     {
-        background-color: rgb(0, 178, 277);
+        background-color: #00B2E3;
         border-radius: 10px;
         height: 50px;
         width: 150px;
     }
 .info
     {
-        background-color: rgb(0, 178, 277);
+        background-color: #00B2E3;
         border-radius: 10px;
         height: 50px;
         width: 150px;
@@ -100,7 +108,7 @@
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 90px;
-        color: rgb(85, 85, 85);
+        color: #6E6E6E;
         font-weight: bolder;
         margin-top: 100px;
         margin-left: 10%;
@@ -108,7 +116,7 @@
 .cursosDivision
     {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-left: 10%;
         margin-top: 150px;
         gap: 150px;
@@ -123,12 +131,16 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
     }
 .curso1 p
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 .curso2
     {
@@ -140,12 +152,16 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        grid-row: 1 / span 1;
+        grid-column: 3 / span 1;
     }
 .curso2 p
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 .curso3
     {
@@ -157,12 +173,16 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 2;
     }
 .curso3 p
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 .curso4
     {
@@ -174,12 +194,16 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
     }
 .curso4 p
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 .curso5
     {
@@ -188,26 +212,41 @@
         width: 400px;
         height: 400px;
         background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: space-between;
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
     }
 .curso5 p
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 .curso6
     {
         background-image: url("img/6.png");
         background-repeat: no-repeat;
-        width: 400px;
+        width: 1000px;
         height: 400px;
         background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 2;
     }
 .curso6 p
     {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
+        margin-left: 20px;
+        margin-right: 10px;
     }
 footer
     {
@@ -226,12 +265,12 @@ footer
 .footer1 ul li
     {
         display: inline-block;
-        color: rgb(109, 109, 109);
+        color: #6E6E6E;
     }
 .footer2
     {
         padding-top: 25px;
-        color: rgb(109, 109, 109);
+        color: #6E6E6E;
         width: 99.1vw;
         display: flex;
         justify-content: center;
